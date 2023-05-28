@@ -1,0 +1,247 @@
+.container {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.header__logo {
+    height: 50px;
+}
+
+.header__bottom {
+    background: #30445c;
+    padding: 10px 5px;
+}
+
+.header__nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header__nav-item {
+    color: #f2ecec;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+}
+
+.header__nav-item:hover {
+    background: #1822534c;
+}
+
+
+
+.header__title {
+    font-size: 16px;
+    color: #30445c;
+    font-weight: 700;
+    width: fit-content;
+    margin-left: 20px;
+
+}
+
+.header__top {
+    display: flex;
+    padding-block: 20px;
+}
+
+.main__card {
+    padding: 50px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+
+.content-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.card__img { 
+    height: 170px;
+    width: 100%;
+}
+
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.card__title { 
+    font-size: 28px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.gallery__card {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    scale: 0.95;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2); 
+    transition: all 0.25s;
+}
+
+    .gallery__card:hover { 
+        scale: 1.05;
+        transition: all 0.25s;
+     }
+
+.card__btn { 
+    display: block;
+    text-align: center;
+    background: #30445c;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.footer {
+    background: #ffffff;
+    padding-block: 50px;
+}
+
+table { 
+    border: 1px solid rgb(10, 242, 6);
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid rgb(20, 1, 6);
+    padding: 10px;
+    text-align: center;
+
+}
+ tr:nth-child(even) {
+    background-color: rgb(89, 218, 143);
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgb(233, 241, 232);
+  }
+
+.form__label label {
+    text-transform: uppercase;
+    color: rgba(34, 60, 80, 0.8);
+    font-weight: 600;
+    display: grid;
+}
+
+.form__item input {
+    font-size: 22px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 128, 255);
+    padding: 7px 0;
+}
+
+.form {
+    display: grid;
+    gap: 30px;
+}
+
+.form__item input::placeholder {
+    color: rgba(34, 60, 80, 0.2);
+    font-size: 18px;
+}
+
+
+.checkbox__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox__item input[type="checkbox"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #ccc;
+    border-radius: 13px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.checkbox__item input[type="checkbox"]:checked::after {
+    content:"☺" ;
+    color: #1822534c;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    transform: translate(0,0);
+    border-radius: 50%;
+    font-size: 21px;
+    line-height: 17px;
+    box-sizing: border-box;
+}
+
+.checkbox__item span {
+    font-size: 16px;
+    line-height: 1.5px;
+}
+.radio__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio__item input[type="checkbox"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #1500ff;
+    border-radius: 13px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.radio__item input[type="checkbox"]:checked::after {
+    content:"☺" ;
+    color: #1822534c;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    transform: translate(0,0);
+    border-radius: 50%;
+    font-size: 21px;
+    line-height: 17px;
+    box-sizing: border-box;
+}
+
+.radio__item span {
+    font-size: 16px;
+    line-height: 1.5px;
+}
